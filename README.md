@@ -134,7 +134,7 @@ conda env create -f relso_env.yml
 pip install -r requirements.txt
 
 # install relso
-cd ReLSO-Guided-Generative-Protein-Design-using-Regularized-Transformers 
+cd code
 
 pip install -e . 
 ```
