@@ -53,7 +53,8 @@ In summary, while JT-AE focuses on jointly training an autoencoder with a fitnes
 
 `Model output`: the reconstructed protein sequences and the predicted fitness values for the input sequences.
 
-### Pseudocode:
+### Steps:
+```
 Initialize ReLSO model with encoder $f_{\theta}$, decoder $g_{theta}$, and fitness prediction network $h_{\theta}$
 
 for each epoch:
@@ -91,7 +92,7 @@ for each epoch:
         12. Combine reconstruction loss, fitness prediction loss, negative sampling loss, and interpolation loss
         
         13. Update model parameters using gradients from the combined loss
-
+```
 <img width="400" alt="Screen Shot 2023-03-26 at 9 21 07 PM" src="https://user-images.githubusercontent.com/89158696/227843535-dc26f652-80b7-4cff-8787-0071086527cf.png">
 
 ### Optimization
