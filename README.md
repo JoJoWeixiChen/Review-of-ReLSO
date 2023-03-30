@@ -53,6 +53,7 @@ In summary, while JT-AE focuses on jointly training an autoencoder with a fitnes
 
 `Model output`: the reconstructed protein sequences and the predicted fitness values for the input sequences.
 
+
 ### Steps:
 ```
 Initialize ReLSO model with encoder $f_{\theta}$, decoder $g_{theta}$, and fitness prediction network $h_{\theta}$
@@ -95,16 +96,18 @@ for each epoch:
 ```
 <img width="400" alt="Screen Shot 2023-03-26 at 9 21 07 PM" src="https://user-images.githubusercontent.com/89158696/227843535-dc26f652-80b7-4cff-8787-0071086527cf.png">
 
+## Results
+
+`Question1:` Why did the results show like this?
+
+<img width="500" alt="Screen Shot 2023-03-27 at 12 28 23 AM" src="https://user-images.githubusercontent.com/89158696/227848806-25d71d0d-1b80-438a-ae8b-b0f3642179a9.png">
+
 ### Optimization
 <img width="983" alt="Screen Shot 2023-03-27 at 12 26 57 AM" src="https://user-images.githubusercontent.com/89158696/227849019-784c0c52-2944-45e4-9210-f66617984358.png">
 
 <img width="558" alt="Screen Shot 2023-03-27 at 12 27 10 AM" src="https://user-images.githubusercontent.com/89158696/227849026-24472c1f-abea-41b4-916a-cecc906ebc15.png">
 
 <img width="325" alt="Screen Shot 2023-03-27 at 12 27 26 AM" src="https://user-images.githubusercontent.com/89158696/227849044-02a64004-6acc-4c17-ac56-c7afaf2ffcb0.png">
-
-## Results
-
-<img width="726" alt="Screen Shot 2023-03-27 at 12 28 23 AM" src="https://user-images.githubusercontent.com/89158696/227848806-25d71d0d-1b80-438a-ae8b-b0f3642179a9.png">
 
 ## Critical Analysis
 
@@ -115,9 +118,7 @@ for each epoch:
 
 3. Real-world validation: To ensure the effectiveness of the optimized protein sequences, it is crucial to validate the results with experimental data.
 
-## Questions
-`Question1:` Why did the results show like this?
-
+### Questions
 `Question2:` What advantage does the Transformer architecture provide when used in the fitness prediction model?
 
 ## Code demonstration
