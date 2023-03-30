@@ -11,7 +11,7 @@ The main problem solved by this article is finding a better way to design protei
 1. enormous size of the search space (A small protein of 30 residues translates into a total search space of $10^{38}$ — far beyond the reach of modern 
 high-throughput screening technologies.)
 
-2. epistasis (complex interactions between amino acids) makes it difficult to predict the effect of small changes in the sequence on its properties
+2. Complex interactions between amino acids makes it difficult to predict the effect of small changes in the sequence on its properties
 
 ### Method
 Regularized Latent Space Optimization (ReLSO)
