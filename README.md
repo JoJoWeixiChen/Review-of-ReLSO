@@ -25,9 +25,6 @@ ReLSO is a transformer-based autoencoder that features a highly structured laten
 \
 ReLSO built based on JT-AE model by including additional regularizations (negative sampling and interpolation losses).
 
-\
-<img width="400" alt="Screen Shot 2023-03-26 at 11 49 16 PM" src="https://user-images.githubusercontent.com/89158696/227847495-950bc57b-6229-4a3b-a179-c0e30075f08e.png">
-
 ### Differences with other model
 ReLSO (Regularized Latent Space Optimization) builds upon JT-AE (Jointly Trained Autoencoder) and introduces specific regularization techniques to improve the optimization process. The two key regularization methods used in ReLSO are:
 
@@ -37,7 +34,8 @@ ReLSO (Regularized Latent Space Optimization) builds upon JT-AE (Jointly Trained
 \
 `Interpolation losses` help maintain a smooth transition between points in the latent space, ensuring that small changes in the latent representation lead to small changes in the output.
 
-\
+<img width="400" alt="Screen Shot 2023-03-26 at 11 49 16 PM" src="https://user-images.githubusercontent.com/89158696/227847495-950bc57b-6229-4a3b-a179-c0e30075f08e.png">
+
 An inherent weakness of JT-AE, is that often a monotonic function is learned by the auxiliary network. Such a function lacks any stopping 
 criterion when used for latent space optimization. To address this, we reshape the fitness function such that the global maximum lie in/near the training 
 data.
