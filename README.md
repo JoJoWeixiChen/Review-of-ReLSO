@@ -53,9 +53,10 @@ In summary, while JT-AE focuses on jointly training an autoencoder with a fitnes
 
 
 ### Steps:
-```
-Initialize ReLSO model with encoder $f_{\theta}$, decoder $g_{theta}$, and fitness prediction network $h_{\theta}$
 
+Initialize ReLSO model with encoder $f_{\theta}$, decoder $g_{\theta}$, and fitness prediction network $h_{\theta}$
+
+```
 for each epoch:
 
     for each batch of protein sequences (x) and fitness values (y):
